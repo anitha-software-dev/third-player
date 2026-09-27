@@ -1,0 +1,102 @@
+{
+  "name": "3rd_player",
+  "version": "1.0.0",
+  "description": "The 3rd Player — Web3 NFT storytelling & minting platform",
+  "main": "index.js",
+  "author": "Anitha",
+  "license": "MIT",
+  "engines": {
+    "npm": "8.3.1",
+    "node": "14.17.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anitha-software-dev/third-player.git"
+  },
+  "homepage": "",
+  "keywords": [
+    "react",
+    "reactjs"
+  ],
+  "dependencies": {
+    "@alch/alchemy-web3": "^1.4.7",
+    "@ethersproject/providers": "^5.7.2",
+    "@testing-library/jest-dom": "5.11.6",
+    "@testing-library/react": "11.2.2",
+    "@testing-library/user-event": "12.2.2",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/walletconnect-connector": "^6.2.13",
+    "@web3-react/walletlink-connector": "^6.2.14",
+    "aos": "^3.0.0-beta.6",
+    "bootstrap": "4.5.3",
+    "chart.js": "2.9.4",
+    "classnames": "2.2.6",
+    "ethers": "^6.1.0",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
+    "interactjs": "^1.10.17",
+    "merkletreejs": "^0.3.9",
+    "moment": "2.29.1",
+    "node-sass": "4.14.1",
+    "node-sass-package-importer": "5.3.2",
+    "nouislider": "14.6.3",
+    "perfect-scrollbar": "1.5.0",
+    "react": "17.0.1",
+    "react-alert": "^7.0.3",
+    "react-bootstrap-modal": "^4.2.0",
+    "react-chartjs-2": "2.11.1",
+    "react-datetime": "3.1.1",
+    "react-dom": "17.0.1",
+    "react-elastic-carousel": "^0.11.5",
+    "react-feather": "^2.0.10",
+    "react-icons": "^4.3.1",
+    "react-player": "^2.10.1",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.1",
+    "react-scroll": "^1.8.7",
+    "react-slick": "^0.29.0",
+    "react-slideshow-image": "^4.0.5",
+    "react-tsparticles": "^2.0.6",
+    "react-web3-provider": "^1.1.2",
+    "reactstrap": "8.7.1",
+    "styled-components": "^5.3.5",
+    "swiper": "^8.3.2",
+    "tsparticles": "^2.0.6",
+    "web-vitals": "1.0.1"
+  },
+  "optionalDependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "react-error-overlay": "6.0.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build && gulp licenses",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile-sass": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/third_player.scss src/assets/css/third_player.css",
+    "minify-sass": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/third_player.scss src/assets/css/third_player.min.css --output-style compressed",
+    "map-sass": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/third_player.scss src/assets/css/third_player.css --source-map true"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

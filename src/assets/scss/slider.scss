@@ -1,0 +1,185 @@
+.shuffle-sec {
+
+    .special-slider {
+        height: 500px;
+
+        input[type=radio] {
+            display: none;
+        }
+
+        .card {
+            position: absolute;
+            width: 40%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            margin: 10px 60px;
+            transition: transform 0.4s ease;
+            cursor: pointer;
+        }
+
+        .shuffle-container {
+            width: 100%;
+            max-width: 800px;
+            max-height: 600px;
+            height: 100%;
+            transform-style: preserve-3d;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cards {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 56px;
+            -o-object-fit: cover;
+            object-fit: cover;
+
+        }
+
+        #item-1:checked~.cards #song-3,
+        #item-2:checked~.cards #song-1,
+        #item-3:checked~.cards #song-2 {
+            transform: translatex(-100%) translateY(10%) scale(0.9) rotate(-15deg);
+            opacity: 1;
+            z-index: 0;
+            height: 400px;
+        }
+
+        #item-1:checked~.cards #song-2,
+        #item-2:checked~.cards #song-3,
+        #item-3:checked~.cards #song-1 {
+            transform: translatex(100%) translatey(10%) scale(0.9) rotate(15deg);
+            opacity: 1;
+            z-index: 0;
+            height: 400px;
+        }
+
+        #item-1:checked~.cards #song-1,
+        #item-2:checked~.cards #song-2,
+        #item-3:checked~.cards #song-3 {
+            transform: translatex(0) scale(1);
+            opacity: 1;
+            z-index: 1;
+            height: 450px;
+        }
+
+        #item-1:checked~.cards #song-1 img,
+        #item-2:checked~.cards #song-2 img,
+        #item-3:checked~.cards #song-3 img {
+            box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+        }
+
+        .cards label {
+            border-radius: 25px !important;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .special-slider {
+
+            #item-1:checked~.cards #song-1,
+            #item-2:checked~.cards #song-2,
+            #item-3:checked~.cards #song-3 {
+                transform: translatex(0) scale(1);
+                opacity: 1;
+                z-index: 1;
+            }
+
+            #item-1:checked~.cards #song-3,
+            #item-2:checked~.cards #song-1,
+            #item-3:checked~.cards #song-2 {
+                transform: translatex(-30%) translateY(10%) scale(0.9) rotate(-15deg) !important;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            #item-1:checked~.cards #song-2,
+            #item-2:checked~.cards #song-3,
+            #item-3:checked~.cards #song-1 {
+                transform: translatex(30%) translatey(10%) scale(0.9) rotate(15deg) !important;
+                opacity: 1;
+                z-index: 0;
+            }
+
+        }
+
+
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .shuffle-container {
+        .offset-md-2 {
+            margin-left: 6% !important;
+        }
+    }
+
+    .shuffle-sec .special-slider {
+        height: 1px !important;
+    }
+}
+
+// @media screen and (max-width: 776px) {
+//     .shuffle-container {
+//         .offset-md-2 {
+//             margin-left: 20% !important;
+//         }
+//     }
+// }
+@media screen and (max-width: 992px) {
+    .shuffle-sec .special-slider {
+        height: 350px !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .special-slider {
+
+        #item-1:checked~.cards #song-1,
+        #item-2:checked~.cards #song-2,
+        #item-3:checked~.cards #song-3 {
+            transform: translatex(0) scale(1);
+            opacity: 1;
+            z-index: 1;
+            height: 350px !important;
+        }
+
+        #item-1:checked~.cards #song-3,
+        #item-2:checked~.cards #song-1,
+        #item-3:checked~.cards #song-2 {
+            transform: translatex(-60%) translateY(10%) scale(0.9) rotate(-15deg) !important;
+            opacity: 1;
+            z-index: 0;
+            height: 300px !important;
+        }
+
+        #item-1:checked~.cards #song-2,
+        #item-2:checked~.cards #song-3,
+        #item-3:checked~.cards #song-1 {
+            transform: translatex(60%) translatey(10%) scale(0.9) rotate(15deg) !important;
+            opacity: 1;
+            z-index: 0;
+            height: 300px !important;
+        }
+
+
+    }
+
+    // .shuffle-container {
+    //     .offset-md-2 {
+    //         margin-left: 23% !important;
+    //     }
+    // }
+}

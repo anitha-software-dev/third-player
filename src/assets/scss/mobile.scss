@@ -1,0 +1,40 @@
+@media screen and (max-width: 576px) {
+    .bg-circle {
+        .banner-box-active {
+            position: static;
+            width: fit-content;
+        }
+    }
+
+    h2 {
+        font-size: 35px !important;
+    }
+
+    .shuffle-sec {
+        .card {
+            width: 60% !important;
+        }
+    }
+
+    .shuffle-container {
+        min-height: 295px !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .navbar-collapse {
+        background: rgb(52, 52, 55);
+    }
+
+    .navbar-collapse {
+        background: rgb(52, 52, 55);
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    h1 {
+        font-size: 50px !important;
+    }
+}
